@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+body {
+    background-color: #D6E6F3;
+    color: #000926;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000926;
+    color: #D6E6F3;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #D6E6F3;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 1.3rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #A6C5D7;
+}
+
+.section {
+    min-height: 100vh;
+    padding: 100px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#welcome {
+    background-color: #A6C5D7;
+}
+
+.section h1 {
+    font-size: 4rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.section h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.section p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.section-subtitle {
+    margin-bottom: 50px !important;
+    color: #333;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    background-color: #0F52BA;
+    color: white;
+    padding: 18px 40px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0c4399;
+}
+
+/* Вкладки для видео (Аккордеон) */
+.video-accordion {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.task-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 9, 38, 0.05);
+    overflow: hidden;
+    text-align: left;
+    transition: 0.3s;
+}
+
+/* Дизайн кнопки раскрытия */
+.task-card summary {
+    padding: 20px 30px;
+    font-size: 1.6rem;
+    color: #000926;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.task-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.task-card summary:after {
+    content: '+';
+    font-size: 2rem;
+    color: #0F52BA;
+    transition: 0.3s;
+}
+
+.task-card[open] summary:after {
+    content: '−';
+}
+
+/* Контейнер плеера */
+.video-container {
+    padding: 0 30px 30px 30px;
+}
+
+.video-placeholder {
+    background-color: #000926;
+    color: #D6E6F3;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    border-radius: 8px;
+}
+
+/* Карточка домашки */
+.homework-card {
+    background-color: white;
+    padding: 60px 40px;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0, 9, 38, 0.08);
+    max-width: 800px;
+}
+
+.homework-details {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    text-align: left;
+    border-left: 4px solid #0F52BA;
+}
+
+.homework-details p {
+    font-size: 1.3rem;
+    margin: 5px 0 !important;
+}
