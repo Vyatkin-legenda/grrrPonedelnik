@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -13,6 +13,7 @@
         <div class="logo">ЕГЭ: Подготовка</div>
         <nav>
             <a href="#welcome">Главная</a>
+            <a href="#cheatsheets">Шпаргалки</a>
             <a href="#videos">Разборы</a>
             <a href="#homework">Практика</a>
         </nav>
@@ -23,11 +24,67 @@
         <div class="content">
             <h1>Подготовка к ЕГЭ на высокие баллы</h1>
             <p>Системный подход к изучению материала. На этом сайте собраны подробные видеоразборы сложных заданий, теория без лишней воды и регулярная практика для закрепления результата.</p>
-            <a href="#videos" class="btn">Приступить к изучению</a>
+            <a href="#cheatsheets" class="btn">Приступить к изучению</a>
         </div>
     </section>
 
-    <!-- Секция 2: Видеоуроки (Аккордеон) -->
+    <!-- Секция 2: Шпаргалки и чек-листы -->
+    <section id="cheatsheets" class="section">
+        <h2>База знаний и чек-листы</h2>
+        <p class="section-subtitle">Авторские шпаргалки, алгоритмы решения и полные разборы тем. Листайте конспекты и смотрите разборы прямо на сайте.</p>
+        
+        <div class="video-accordion">
+            
+            <!-- Задание 12 (Полный видеоразбор) -->
+            <details class="task-card">
+                <summary>
+                    <span>Задание №12 — Исполнители и алгоритмы: полное руководство</span>
+                    <span class="badge badge-video">Видео • Полный разбор</span>
+                </summary>
+                <div class="video-container">
+                    <p class="cheat-desc">Подробный видеоразбор всех прототипов задания №12: от базовой логики исполнителя Редактор до написания универсального шаблона на Python.</p>
+                    <iframe width="100%" height="400" src="https://rutube.ru/play/embed/fab3dc3ddc82a198b9e5b4dde5153ac0/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                </div>
+            </details>
+
+            <!-- Задание 14 (Чек-лист PDF) -->
+            <details class="task-card">
+                <summary>
+                    <span>Задание №14 — Системы счисления: чек-лист и шаблоны</span>
+                    <span class="badge badge-pdf">PDF • Чек-лист</span>
+                </summary>
+                <div class="video-container">
+                    <p class="cheat-desc">Вся необходимая теория по позиционным системам счисления, перевод чисел и готовые алгоритмы решения на Python. Документ можно листать прямо в окне ниже:</p>
+                    <div class="pdf-viewer">
+                        <iframe src="checklist_14.pdf" width="100%" height="550px" style="border: none;"></iframe>
+                    </div>
+                    <div class="pdf-actions">
+                        <a href="checklist_14.pdf" target="_blank" class="btn-outline">Развернуть PDF на весь экран ↗</a>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Задание 18 (Чек-лист PDF) -->
+            <details class="task-card">
+                <summary>
+                    <span>Задание №18 — Робот-сборщик и динамическое программирование</span>
+                    <span class="badge badge-pdf">PDF • Чек-лист</span>
+                </summary>
+                <div class="video-container">
+                    <p class="cheat-desc">Пошаговый чек-лист по решению задания №18 в таблицах Excel: формулы, обработка стенок, углов и поиск экстремумов. Листайте конспект прямо на странице:</p>
+                    <div class="pdf-viewer">
+                        <iframe src="checklist_18.pdf" width="100%" height="550px" style="border: none;"></iframe>
+                    </div>
+                    <div class="pdf-actions">
+                        <a href="checklist_18.pdf" target="_blank" class="btn-outline">Развернуть PDF на весь экран ↗</a>
+                    </div>
+                </div>
+            </details>
+
+        </div>
+    </section>
+
+    <!-- Секция 3: Видеоуроки (Аккордеон) -->
     <section id="videos" class="section">
         <h2>Видеоразборы заданий</h2>
         <p class="section-subtitle">Нажмите на номер задания, чтобы открыть видеоурок.</p>
@@ -165,7 +222,7 @@
             <details class="task-card">
                 <summary>Задание №17</summary>
                 <div class="video-container">
-                    <div class="video-placeholder">Видео скоро появится</div>
+                    <iframe width="100%" height="400" src="https://rutube.ru/video/f2b26dfada708d963bba323b0c973d78/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
                 </div>
             </details>
 
@@ -173,7 +230,7 @@
             <details class="task-card">
                 <summary>Задание №18</summary>
                 <div class="video-container">
-                    <div class="video-placeholder">Видео скоро появится</div>
+                    <iframe width="100%" height="400" src="https://rutube.ru/video/0eac14153b5e5ecf9872354276cbe4bc/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
                 </div>
             </details>
 
@@ -229,14 +286,14 @@
             <details class="task-card">
                 <summary>Задание №25</summary>
                 <div class="video-container">
-                    <div class="video-placeholder">Видео скоро появится</div>
+                    <iframe width="100%" height="400" src="https://rutube.ru/video/2d3eaeacd34b7f6d7cde8df1fb91db0e/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
                 </div>
             </details>
 
         </div>
     </section>
 
-    <!-- Секция 3: Домашка -->
+    <!-- Секция 4: Домашка -->
     <section id="homework" class="section">
         <div class="homework-card">
             <h2>Еженедельная практика</h2>
