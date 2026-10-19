@@ -61,6 +61,11 @@ nav a:hover {
     background-color: #A6C5D7;
 }
 
+#cheatsheets {
+    background-color: #E8F1F8;
+    border-bottom: 1px solid rgba(15, 82, 186, 0.15);
+}
+
 .section h1 {
     font-size: 4rem;
     margin-bottom: 25px;
@@ -102,10 +107,10 @@ nav a:hover {
     background-color: #0c4399;
 }
 
-/* Вкладки для видео (Аккордеон) */
+/* Вкладки для видео и шпаргалок (Аккордеон) */
 .video-accordion {
     width: 100%;
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -132,6 +137,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
     background-color: white;
 }
 
@@ -144,10 +150,69 @@ nav a:hover {
     font-size: 2rem;
     color: #0F52BA;
     transition: 0.3s;
+    flex-shrink: 0;
 }
 
 .task-card[open] summary:after {
     content: '−';
+}
+
+/* Бейджи для карточек шпаргалок */
+.badge {
+    font-size: 1.05rem;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-weight: 700;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+.badge-pdf {
+    background-color: #E6F0FA;
+    color: #0F52BA;
+    border: 1px solid #B8D4F2;
+}
+
+.badge-video {
+    background-color: #000926;
+    color: #D6E6F3;
+}
+
+/* Описания и встроенный просмотр PDF */
+.cheat-desc {
+    font-size: 1.3rem !important;
+    color: #2c3e50;
+    margin: 0 0 20px 0 !important;
+    max-width: 100% !important;
+}
+
+.pdf-viewer {
+    border: 2px solid #D6E6F3;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    margin-bottom: 15px;
+}
+
+.pdf-actions {
+    text-align: right;
+}
+
+.btn-outline {
+    display: inline-block;
+    border: 2px solid #0F52BA;
+    color: #0F52BA;
+    padding: 10px 22px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: #0F52BA;
+    color: white;
 }
 
 /* Контейнер плеера */
